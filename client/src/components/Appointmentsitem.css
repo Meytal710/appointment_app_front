@@ -1,0 +1,94 @@
+.appointment-item {
+    list-style-type: none;
+    border: 2px solid #a3adee;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  /*the place of the item on a bigger screen*/
+  @media screen and (min-width: 768px) {
+    .appointment-item {
+      margin-left: 12px;
+      margin-right: 12px;
+      margin-bottom: 32px;
+      min-width: 297px;
+    }
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    color: #171f46;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  
+  /*makes the font size bigger on a bigger screen*/
+  @media screen and (min-width: 768px) {
+    .list-title-heading {
+      font-size: 18px;
+    }
+  }
+  
+  
+  .date {
+    color: #7e858e;
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  /*makes the font size bigger on a bigger screen*/
+  @media screen and (min-width: 768px) {
+    .date {
+      font-size: 16px;
+    }
+  }
+
+
+  .buttons {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    column-gap: 30px;
+    /* position: absolute; */
+  }
+
+
+  .delete-task {
+    padding: 20px;
+    width: 60px;
+    height: 24px;
+    color: white;
+    background-color: #b9515b;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .edit-task {
+    padding: 20px;
+    width: 60px;
+    height: 24px;
+    color: white;
+    background-color: #515fb9;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  

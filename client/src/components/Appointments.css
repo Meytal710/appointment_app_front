@@ -1,0 +1,201 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #4c4b8b, #f5a9bc);
+    min-height: 100vh;
+  }
+  
+  .board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 85%;
+    border-radius: 12px;
+    max-width: 550px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .board-container {
+      width: 78%;
+      max-width: 1120px;
+    }
+  }
+  
+  .appointments-container {
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 86%;
+    max-width: 972px;
+  }
+  
+  .add-appointment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 64px; 
+  }
+
+  
+  .add-appointment-heading {
+    color: #171f46;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .add-appointment-heading {
+      font-size: 32px;
+      margin-bottom: 48px;
+    }
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .form {
+      max-width: 320px;
+    }
+  }
+  
+  .label {
+    color: #7e858e;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .input {
+    color: #131415;
+    font-family: 'Roboto';
+    font-size: 12px;
+    border: 1px solid #7e858e;
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    outline: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .input {
+      font-size: 14px;
+    }
+  }
+  
+  .add-button {
+    align-self: flex-start;
+    background-color: #8b5cf6;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    outline: none;
+  }
+  
+  
+  .appointments-heading {
+    color: #171f46;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .appointments-heading {
+      font-size: 34px;
+    }
+  }
+
+  .appointments-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin-top: 24px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .appointments-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .addPopup {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 64px;
+    height: 64px;
+    border-radius: 999px;
+    font-size: 28px;
+    font-weight: 900;
+    color: #EEE;
+    background-image: linear-gradient(to bottom right, #e15c88, #413755);
+    cursor: pointer;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 100%;
+    max-width: 400px;
+    background-color: #cccfd6;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 24px #131a26;
+  }
+  
+  .closePopup {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D81E5B;
+    color: #EEE;
+    border-radius: 50%;
+  }
+  
+  .popup h3 {
+    color: white;
+    margin-bottom: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
